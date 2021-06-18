@@ -8,12 +8,12 @@ describe Player do
     expect(nicki.name).to eq "Nicki"
   end
 
-  it "can attack another player" do
-    allow(nicki).to receive(:reduce_points)
-    doja.attack(nicki)
-  end
+  #   it "can attack another player" do
+  #     allow(nicki).to receive(:reduce_points)
+  #     doja.attack(nicki)
+  #   end
 
   it "can reduce player's hit points" do
-    expect { nicki.reduce_points }.to change { nicki.hit_points }.by -10
+    expect { nicki.reduce_points }.to change { nicki.player_points }.by -10
   end
 end
