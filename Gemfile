@@ -11,4 +11,4 @@ gem "selenium-webdriver"
 
 gem "rspec"
 gem "sinatra"
-gem "sinatra/reloader"
+gem "sinatra-contrib"
