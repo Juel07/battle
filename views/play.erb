@@ -4,10 +4,9 @@
       <link href="<%= url("/styles.css") %>" rel="stylesheet" type="text/css" />
   </head>
   <body class="container">
-    <h1><%= @player1 %> vs <%= @player2 %></h1>
+    <h1><%= @player1.name %> vs <%= @player2.name %></h1>
     <div class="container points">
-        <h3><%= @player1 %> = 60HP</h3>
-        <h3><%= @player2 %> = 60HP</h3>
+        <h3><%= @player2.name %> = <%= @player2.player_points %>HP</h3>
     </div>
     <section class="container buttons">
         <a href="/attack">
