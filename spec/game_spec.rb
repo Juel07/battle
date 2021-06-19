@@ -18,4 +18,13 @@ describe Game do
     expect(nicki).to receive(:reduce_points)
     game.attack(nicki)
   end
+
+  it "starts with Player 1's turn" do
+    expect(game.curr_turn).to eq nicki
+  end
+
+  it "switches turns" do
+    game.switch_turns
+    expect(game.curr_turn).to eq doja
+  end
 end
