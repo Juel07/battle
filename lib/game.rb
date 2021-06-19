@@ -22,8 +22,6 @@ class Game
     player.reduce_points
   end
 
-  private
-
   def opponent_of(current_turn)
     @players.select { |player| player != current_turn }.first
   end

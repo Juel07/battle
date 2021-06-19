@@ -1,4 +1,9 @@
-<p>Attack successful!<p>
-<a href="/play">
-  <p>Go Back</p>
-</a>
+<h3>Attack successful!</h3>
+<% if (@game.curr_turn == @game.player1) %>
+  <p><%= @game.player1.name %> attacked <%= @game.player2.name %>.</p>
+<% else %>
+  <p><%= @game.player2.name %> attacked <%= @game.player1.name %>.</p>
+<% end %>
+<form action="/switch-turns" method="post">
+  <button>Go Back</button>
+</form>

@@ -7,6 +7,7 @@
     <h1><%= @game.player1.name %> vs <%= @game.player2.name %></h1>
     <p><%= @game.curr_turn.name %>'s turn</p>
     <div class="container points">
+        <h3><%= @game.player1.name %> = <%= @game.player1.player_points %>HP</h3>
         <h3><%= @game.player2.name %> = <%= @game.player2.player_points %>HP</h3>
     </div>
     <section class="container buttons">

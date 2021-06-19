@@ -27,4 +27,11 @@ describe Game do
     game.switch_turns
     expect(game.curr_turn).to eq doja
   end
+
+  describe "#opponent_of" do
+    it "finds the opponent of current player" do
+      expect(game.opponent_of(nicki)).to eq doja
+      expect(game.opponent_of(doja)).to eq nicki
+    end
+  end
 end
