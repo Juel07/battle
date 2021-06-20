@@ -14,11 +14,6 @@ describe Game do
     expect(game.player2).to eq doja
   end
 
-  it "can attack the player and reduce HP" do
-    expect(nicki).to receive(:reduce_points)
-    game.attack(nicki)
-  end
-
   it "starts with Player 1's turn" do
     expect(game.curr_turn).to eq nicki
   end

@@ -18,10 +18,6 @@ class Game
     @curr_turn = opponent_of(@curr_turn)
   end
 
-  def attack(player)
-    player.reduce_points
-  end
-
   def opponent_of(current_turn)
     @players.select { |player| player != current_turn }.first
   end
