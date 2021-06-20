@@ -1,0 +1,13 @@
+<html>
+  <head>
+      <title>Battle</title>
+      <link href="<%= url("/styles.css") %>" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="container">
+    <h3>Game Over!</h3>
+    <p><%= @game.loser.name %> lost the battle.</p>
+    <form action="/">
+      <input type="submit" value= "Play Again" class="button">
+    </form>
+  </body>
+</html>

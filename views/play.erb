@@ -10,10 +10,8 @@
         <h3><%= @game.player1.name %> = <%= @game.player1.player_points %>HP</h3>
         <h3><%= @game.player2.name %> = <%= @game.player2.player_points %>HP</h3>
     </div>
-    <section class="container buttons">
-        <a href="/attack">
-            <p>Attack</p>
-        </a>
-    </section>
+    <form action="/attack" method="post">
+    <input type="submit" value="Attack" class="button">
+    </form>
   </body>
 </html>

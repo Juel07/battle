@@ -1,13 +1,13 @@
 feature "Attacking" do
   scenario "attack Player 2" do
     sign_in_and_play
-    click_link "Attack"
+    click_button "Attack"
     expect(page).to have_content "Anita attacked Juel."
   end
   scenario "attack Player 1" do
     sign_in_and_play
     attack_and_confirm
-    click_link "Attack"
+    click_button "Attack"
     expect(page).to have_content "Juel attacked Anita."
   end
   scenario "reduce Player 2 HP by 10" do

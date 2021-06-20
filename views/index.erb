@@ -5,12 +5,12 @@
   </head>
   <body class="container">
     <h1>Battle!</h1>
-    <h3>Sign in to play</h3>
-    <form action="/start-game" method="post">
+    <h3>Register to play</h3>
+    <form action="/start-game" method="post" class="orange-border">
         <label for="player-one">Player 1 name: </label>
-        <input id="player-one" name="player1" type="text"><br>
+        <input id="player-one" name="player1" type="text" required><br>
         <label for="player-two">Player 2 name: </label>
-        <input id="player-two" name="player2" type="text"><br>
+        <input id="player-two" name="player2" type="text" required><br>
         <input type="submit" value="submit">
     </form>
   </body>
